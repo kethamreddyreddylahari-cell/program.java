@@ -1,0 +1,33 @@
+2. Find the Highest Altitude
+
+
+class Solution {
+    public int largestAltitude(int[] gain) {
+
+        int altitude = 0;
+        int highest = 0;
+
+        for (int i = 0; i < gain.length; i++) {
+            altitude = altitude + gain[i];
+
+            if (altitude > highest) {
+                highest = altitude;
+            }
+        }
+
+        return highest;
+    }
+}
+
+
+Accepted
+Runtime: 0 ms
+Case 1
+Case 2
+Input
+gain =
+[-5,1,5,0,-7]
+Output
+1
+Expected
+1
